@@ -1,5 +1,10 @@
-.container-list {
-  width: 15%;
+html,
+body {
+  background-color: #375576;
+}
+
+.container-list h1 {
+  color: #1B2839;
 }
 
 .container-list .list {
@@ -13,6 +18,10 @@
 .container-list .list i:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.strikethrough {
+  text-decoration: line-through;
 }
 
 .footer a {

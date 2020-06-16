@@ -1,14 +1,30 @@
+html,
+body {
+    background-color: #375576;
+}
+
 .container-list {
-    width: 15%;
+
+    h1 {
+        color: #1B2839;
+    }
+
     .list {
         background-color: red;
+
         i {
             cursor: pointer;
+
             &:hover {
                 transform: scale(1.1);
             }
         }
     }
+}
+
+
+.strikethrough {
+    text-decoration: line-through;
 }
 
 .footer a {
