@@ -3,25 +3,40 @@ body {
     background-color: #375576;
 }
 
-.container-list {
+.container {
 
-    h1 {
-        color: #1B2839;
+    .container-list {
+        background-color: #fff;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        h1 {
+            color: #1B2839;
+        }
+
+        .list {
+
+            i {
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
     }
 
-    .list {
-        background-color: red;
-
-        i {
-            cursor: pointer;
-
-            &:hover {
-                transform: scale(1.1);
-            }
+    .filters {
+        background-color: #fff;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+        button {
+         &:hover {
+            border: 1px solid rgba($color: #000000, $alpha: 0.4);
         }
     }
 }
-
 
 .strikethrough {
     text-decoration: line-through;

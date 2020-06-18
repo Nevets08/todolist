@@ -3,21 +3,33 @@ body {
   background-color: #375576;
 }
 
-.container-list h1 {
+.container .container-list {
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.container .container-list h1 {
   color: #1B2839;
 }
 
-.container-list .list {
-  background-color: red;
-}
-
-.container-list .list i {
+.container .container-list .list i {
   cursor: pointer;
 }
 
-.container-list .list i:hover {
+.container .container-list .list i:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.container .filters {
+  background-color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.container button:hover {
+  border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 .strikethrough {
