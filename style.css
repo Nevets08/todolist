@@ -3,32 +3,25 @@ body {
   background-color: #375576;
 }
 
-.container .container-list {
+.container-content {
   background-color: #fff;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-radius: 20px;
 }
 
-.container .container-list h1 {
+.container-content .container-list h1 {
   color: #1B2839;
 }
 
-.container .container-list .list i {
+.container-content .container-list .list i {
   cursor: pointer;
 }
 
-.container .container-list .list i:hover {
+.container-content .container-list .list i:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.container .filters {
-  background-color: #fff;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-
-.container button:hover {
+.container-content button:hover {
   border: 1px solid rgba(0, 0, 0, 0.4);
 }
 

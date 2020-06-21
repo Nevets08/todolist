@@ -1,8 +1,9 @@
 const list = document.querySelector('.container-list');
 const filtersCounter = document.querySelector('.filters p span');
-const icons = document.querySelector('.filters');
+const filters = document.querySelector('.filters');
 let done = false;
 let todoCount = 0;
+
 // edit
 // console.log(list.lastChild.children[2])
 // delete
@@ -17,7 +18,7 @@ list.children[1].addEventListener('keydown', (e) => {
         // }
 
         const listAdded = document.createElement('div');
-        listAdded.innerHTML = "<input type='checkbox'>" + '<span id="listContent">' + list.children[1].value + '</span>' + '<i class="fas fa-edit"></i>' + '<i class="fas fa-trash"></i>';
+        listAdded.innerHTML = "<input type='checkbox'>" + '<span id="listContent" contenteditable="true">' + list.children[1].value + '</span>' + '<i class="fas fa-edit"></i>' + '<i class="fas fa-trash"></i>';
         listAdded.classList.add('list');
         list.appendChild(listAdded);
 
@@ -27,7 +28,6 @@ list.children[1].addEventListener('keydown', (e) => {
         // Count the task left when it is created
         todoCount++;
         filtersCounter.innerHTML = todoCount;
-
 
         // When the task is done : click on the checkbox
         listAdded.addEventListener('change', () => {
@@ -48,16 +48,16 @@ list.children[1].addEventListener('keydown', (e) => {
             }
         });
 
-        // Delete button
-        list.lastChild.children[3].addEventListener('click', () => {
-            list.lastChild.remove();
-            todoCount--;
-            filtersCounter.innerHTML = todoCount;
+        const icons = document.querySelectorAll('.container-list i');
+
+        // Buttons on list created (edit, delete)
+        icons.forEach(icon => {
+            icon.addEventListener('click', () => {
+                // Delete button
+                if (icon.className === 'fas fa-trash') {
+                    icon.parentElement.remove();
+                }
+            });
         });
-
-        // Edit button
-        // list.lastChild.children[2].addEventListener('click', () => {
-
-        // });
     };
 });
