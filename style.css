@@ -21,6 +21,11 @@ body {
           transform: scale(1.1);
 }
 
+.container-content .container-list .list #listContent {
+  margin-left: 15px;
+  border: none;
+}
+
 .container-content button:hover {
   border: 1px solid rgba(0, 0, 0, 0.4);
 }
