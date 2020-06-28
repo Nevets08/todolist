@@ -21,9 +21,10 @@ body {
           transform: scale(1.1);
 }
 
-.container-content .container-list .list #listContent {
+.container-content .container-list .list .listContent {
   margin-left: 15px;
   border: none;
+  width: 85%;
 }
 
 .container-content button:hover {
